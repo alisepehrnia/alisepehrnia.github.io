@@ -1,90 +1,475 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+
+<html lang="fa" dir="rtl">
 
 <head>
+
+  <title>علی سپهرنیا | برنامه نویس</title>
+
+  <!-- Requried Meta Tags -->
   <meta charset="utf-8">
-  <title>Ali Sepehrnia | Software Engineer</title>
-  <meta name="description" content="Ali Sepehrnia Personal Website">
+  <meta name="description" content="طراح و برنامه نویس نرم افزار های ویندوز، موبایل و وب">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="Ali Sepehrnia | Software Engineer">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+  <!-- SEO -->
+  <meta name="keywords" content="علی, سپهرنیا, برنامه نویس، نرم افزار, طراحی سایت, برنامه"/>
+  <meta name="robots" content="index, follow">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:title" content="علی سپهرنیا | برنامه نویس">
+  <meta property="og:description" content="طراح و برنامه نویس نرم افزار های ویندوز، موبایل و وب">
+  <meta property="og:url" content="https://sepehrnia.net">
+
+  <!-- Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Apple Web Application (PWA) -->
+  <meta name="apple-mobile-web-app-title" content="علی سپهرنیا">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-touch-fullscreen" content="yes">
+  
+  <!-- Apple Launch Screen (Splash Screen) -->
+  <link href="splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  
+  <!-- Apple Icons -->
+  <link rel="apple-touch-icon" href="/touch-icon-152.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/touch-icon-152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/touch-icon-180.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="/touch-icon-167.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2d89ef">
+
+  <!-- Microsoft Icons -->
+  <meta name="msapplication-square70x70logo" content="mstile-70x70.png">
+  <meta name="msapplication-square150x150logo" content="mstile-150x150.png">
+  <meta name="msapplication-wide310x150logo" content="mstile-310x150.png">
+  <meta name="msapplication-square310x310logo" content="mstile-310x310.png">
 
   <!-- Fav Icons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=1.0">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=1.0">
-  <link rel="manifest" href="/site.webmanifest?v=1.0">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg?v=1.0" color="#5bbad5">
-  <link rel="shortcut icon" href="/favicon.ico?v=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel='icon' sizes='192x192' href='android-chrome-192x192.png'>
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Theme -->
   <meta name="msapplication-TileColor" content="#2d89ef">
-  <meta name="theme-color" content="#ededed">
+  <meta name="theme-color" content="#ededed"> <!-- Android -->
 
-
-  <link rel="stylesheet" href="css/normalize.css">
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q" crossorigin="anonymous">
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/main.css">
 
-  <meta name="theme-color" content="#fafafa">
-	
-	<style>
-    * {
-      line-height: 1.2;
-      margin: 0;
-    }
+  <!-- Vazir Font -->
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" type="text/css" />
 
-    html {
-      color: #888;
-      display: table;
-      font-family: sans-serif;
-      height: 100%;
-      text-align: center;
-      width: 100%;
-    }
+  <!-- Bootstrap Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+  
+  <!-- Animate.CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-    body {
-      display: table-cell;
-      vertical-align: middle;
-      margin: 2em auto;
-    }
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/92512333a1.js" crossorigin="anonymous"></script>
 
-    h1 {
-      color: #555;
-      font-size: 2em;
-      font-weight: 400;
-    }
-
-    p {
-      margin: 0 auto;
-      width: 280px;
-    }
-
-    @media only screen and (max-width: 280px) {
-
-      body,
-      p {
-        width: 95%;
-      }
-
-      h1 {
-        font-size: 1.5em;
-        margin: 0 0 0.3em;
-      }
-
-    }
-  </style>
 </head>
 
 <body>
 
-  <!-- Add your site or application content here -->
-	<h1>Ali Sepehrnia</h1>
-	<h4>Software Engineer</h4>
-	
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <!-- SVG Contents -->
+  <svg version="1.0" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" style="display: none;">
+
+  </svg>
+
+  <!-- Start Of Body Content -->
+
+  <!-- Header -->
+  <header id="top" class="animate__animated animate__fadeIn">
+    <!-- Navbar -->
+    <nav class="navbar navbar-light navbar-expand-sm p-4">
+      <div class="container-fluid">
+
+        <!-- Logo -->
+        <a class="navbar-brand mx-2" href="#top">
+          <img src="img/logo-circle.svg" width="50" alt="logo" class="d-inline-block align-text-center">
+          <span class="fs-4 fw-bold px-2">علی سپهرنیا</span>
+        </a>
+
+        <!-- Hamburger Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav Pages -->
+        <div class="collapse navbar-collapse justify-content-sm-end justify-content-lg-start" id="navbarNav">
+          <ul class="navbar-nav nav-animated gap-2">
+            <nav-link href="#somewhere" title="somewhere"></nav-link>
+            <li class="nav-item"><a href="#about" class="nav-link">درباره من</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link">مهارت ها</a></li>
+            <li class="nav-item"><a href="#portfolio" class="nav-link">نمونه کارها</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">تماس با من</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Links -->
+        <div class="d-none d-lg-block">
+          <ul class="navbar-nav nav-animated gap-1">
+            <li class="nav-item"><a href="https://instagram.com/sepehrnia.soft" class="nav-link fs-5"><i class="bi bi-instagram"></i></a></li>
+            <li class="nav-item"><a href="https://t.me/asp7798" class="nav-link fs-5"><i class="bi bi-telegram"></i></a></li>
+            <li class="nav-item"><a href="https://github.com/alisepehrnia" class="nav-link fs-5"><i class="bi bi-github"></i></a></li>
+            <li class="nav-item"><a href="https://www.linkedin.com/in/alisepehrnia" class="nav-link fs-5"><i class="bi bi-linkedin"></i></a></li>
+            <li class="nav-item"><a href="mailto:alisepehrnia77@gmail.com" class="nav-link fs-5"><i class="bi bi-envelope-fill"></i></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+
+    <!-- Hero -->
+    <div id="about" class="container-lg px-2 py-4 animate__animated animate__fadeIn">
+      <div class="row align-items-center py-4">
+
+        <div class="d-flex justify-content-center col-12 col-sm-6 col-md-5 col-lg-4">
+          <img src="img/avatar.jpg" class="d-block circle mx-lg-auto img-fluid" alt="Avatar" width="300" height="300" loading="lazy">
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-7 col-lg-8">
+          <h1 class="p-2">
+              سلام! من یک مهندس کامپیوتر و
+              <span class="text-special"> برنامه نویس </span>
+              هستم.
+          </h1>
+
+          <p class="p-2 lh-lg text-muted">
+            من علی سپهرنیا هستم، ۲۳ سالمه، مهندس کامپیوترم و برنامه نویسی میکنم.
+            اگر برای خودتون یا کسب و کارتون نیاز به 
+            <strong>اپلیکیشن</strong>
+            و
+            <strong>وبسایت</strong>
+            دارید
+            یا اگر میخواید یک کار سخت رو آسون ترش کنید میتونید روی من حساب کنید!
+          </p>
+
+          <div class="d-flex flex-wrap gap-2 p-2">
+            <a href="#contact">
+              <button type="button" class="btn btn-outline-secondary px-3 py-2">
+                سفارش کار
+                <i class="bi bi-cart-fill mx-1"></i>
+              </button>
+            </a>
+            <a href="#skills">
+              <button type="button" class="btn btn-outline-secondary px-3 py-2">
+                چیکار بلدی!؟
+              </button>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div id="skills" class="container px-2 py-5 animate__animated animate__fadeIn" >
+      <h1 class="py-4 text-center">مهارت های من</h1>
+
+      <div class="row g-4 py-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
+        <!-- 1st Item -->
+        <div class="col d-flex align-items-start">
+          <div class="circle w-60 bg-special-l me-4 d-block p-3">
+            <i class="bi bi-globe2 mx-1 opacity-75"></i>
+          </div>
+          <div>
+            <h3>طراحی و برنامه نویسی سایت</h3>
+            <p class="p-2 text-muted">انجام کلیه مراحل از شروع ساخت یک وبسایت تا پایان آن!</p>
+          </div>
+        </div>
+        <!-- 2nd Item -->
+        <div class="col d-flex align-items-start">
+          <div class="circle w-60 bg-special-l me-4 d-block p-3">
+            <i class="bi bi-phone mx-1 opacity-75"></i>
+          </div>
+          <div>
+            <h3>طراحی و برنامه نویسی اپلیکیشن</h3>
+            <p class="p-2 text-muted">انجام کلیه مراحل از شروع ساخت یک اپلیکیشن موبایل و ویندوز تا پایان آن!</p>
+          </div>
+        </div>
+        <!-- 3rd Item -->
+        <div class="col d-flex align-items-start">
+          <div class="circle w-60 bg-special-l me-4 d-block p-3">
+            <i class="bi bi-code-slash mx-1 opacity-75"></i>
+          </div>
+          <div>
+            <h3>طراحی و برنامه نویسی اختصاصی</h3>
+            <p class="p-2 text-muted">انجام پروژه های نرم افزاری مختلف بر روی سرور، سخت افزار، توکار و ...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center p-2">
+          <button type="button" class="btn btn-outline-secondary m-1 px-3 py-2" data-bs-toggle="collapse" href="#skillDetails" role="button" aria-expanded="false" aria-controls="skillDetails">
+            جزئیات مهارت ها
+          </button>
+
+          <a href="#portfolio">
+            <button type="button" class="btn btn-outline-secondary m-1 px-3 py-2">
+              چیکارا کردی!؟
+            </button>
+          </a>
+      </div>
+
+      <div class="row g-4 py-4 row-cols-2 ltr collapse" id="skillDetails">
+
+        <div class="col">
+          <div class="d-flex flex-wrap gap-1 justify-content-start p-1 my-2 ltr">
+            Frontend: 
+            <span class="badge rounded-pill bg-secondary">HTML</span>
+            <span class="badge rounded-pill bg-secondary">CSS</span>
+            <span class="badge rounded-pill bg-secondary">Bootstrap</span>
+            <span class="badge rounded-pill bg-secondary">Winform</span>
+            <span class="badge rounded-pill bg-secondary">WPF</span>
+            <span class="badge rounded-pill bg-secondary">XAML</span>
+          </div>
+
+          <div class="d-flex flex-wrap gap-1 justify-content-start p-1 my-2 ltr">
+            Backend: 
+            <span class="badge rounded-pill bg-secondary">C#</span>
+            <span class="badge rounded-pill bg-secondary">ASP.NET</span>
+            <span class="badge rounded-pill bg-secondary">.NET Core</span>
+            <span class="badge rounded-pill bg-secondary">RESTful</span>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="d-flex flex-wrap gap-1 justify-content-start p-1 my-2 ltr">
+            Database: 
+            <span class="badge rounded-pill bg-secondary">MSSQL</span>
+            <span class="badge rounded-pill bg-secondary">PostgreSQL</span>
+            <span class="badge rounded-pill bg-secondary">Sqlite</span>
+            <span class="badge rounded-pill bg-secondary">MongoDB</span>
+          </div>
+
+          <div class="d-flex flex-wrap gap-1 justify-content-start p-1 my-2 ltr">
+            Other: 
+            <span class="badge rounded-pill bg-secondary">Photoshop</span>
+            <span class="badge rounded-pill bg-secondary">CorelDraw</span>
+            <span class="badge rounded-pill bg-secondary">Git</span>
+            <span class="badge rounded-pill bg-secondary">Github</span>
+            <span class="badge rounded-pill bg-secondary">IoT</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Portfolio -->
+    <div class="album px-2 py-5 animate__animated animate__fadeIn" id="portfolio">
+      <h1 class="pb-4 text-center fw-bold">نمونه کارها</h1>
+      <div class="container">
+        <div class="row g-4 py-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
+          <!-- Item 1 -->
+          <div class="col px-4">
+            <div class="card">
+              <div class="card-img bg-lgray">
+                <img src="img/portfolio/1.jpg" class="card-img-top keep-aspect">
+              </div>
+
+              <div class="card-body">
+                <h4 class="card-title my-3">تحلیل، طراحی و پیاده سازی سامانه پایش از راه دور اینترنت اشیاء</h4>
+                <p class="card-text text-break text-muted">
+                  این سامانه با هدف بهبود نظارت بر دوربین های شهری و متعلقات آن 
+                   از طریق سنسورها و بردهای کنترلی طراحی و پیاده سازی شد.
+                  از جمله قابلیت های آن میتوان به پایش تمامی اجزا به صورت متمرکز و روی نقشه، تعریف هشدار،
+                  تعریف کاربر با سطوح مختلف و کنترل از راه دور دستگاه ها اشاره کرد.
+                </p>
+
+                <div class="d-flex flex-wrap gap-1 ltr">
+                  <span class="badge ltr rounded-pill bg-secondary">C#</span>
+                  <span class="badge rounded-pill bg-secondary">.Net Core</span>
+                  <span class="badge rounded-pill bg-secondary">MongoDB</span>
+                  <span class="badge rounded-pill bg-secondary">MQTT</span>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="col px-4">
+            <div class="card">
+              <div class="card-img bg-secondary">
+                <img src="img/portfolio/2.jpg" class="card-img-top keep-aspect">
+              </div>
+
+              <div class="card-body">
+                <h4 class="card-title my-3">سامانه پایش از راه دور اینترنت اشیاء (ویندوز)</h4>
+                <p class="card-text text-break text-muted">
+                  امکانات:
+                  ورود کاربر، مدیر یا پشتیبان سامانه
+                  -
+                  تنظیمات و شخصی سازی رابط کاربری
+                  -
+                  افزودن بیشمار دستگاه
+                  -
+                  افزودن سنسورها و کنترلرهای اختصاصی به هر دستگاه
+                  -
+                  بصری سازی داده های دستگاه ها با گیج، نمودار و آیکن
+                  -
+                  برنامه نویسی شده به صورت ماژولار
+                  و ...
+                </p>
+
+                <div class="d-flex flex-wrap gap-1 ltr">
+                  <span class="badge rounded-pill bg-secondary">C#</span>
+                  <span class="badge rounded-pill bg-secondary">.Net</span>
+                  <span class="badge rounded-pill bg-secondary">Winform</span>
+                  <span class="badge rounded-pill bg-secondary">UI</span>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="col px-4">
+            <div class="card">
+              <div class="card-img bg-lgray">
+                <img src="img/portfolio/3.jpg" class="card-img-top keep-aspect">
+              </div>
+
+              <div class="card-body">
+                <h4 class="card-title my-3">نرم افزار بیجک باربری</h4>
+                <p class="card-text text-break text-muted">
+                  امکانات:
+                  تعریف باربری، بسته بندی، نوع کالا، فرستنده، گیرنده و حامل
+                  -
+                  ذخیره بیجک ها در پایگاه داده
+                  -
+                  گزارش گیری، مشاهده و چاپ مجدد
+                  -
+                  قفل نرم افزاری
+                  -
+                  چاپ گزارش در اندازه های مختلف
+                  -
+                  فیلتر و جستجوی گزارش ها بر حسب تاریخ، باربری، فرستنده و گیرنده
+                  -
+                  ورود و ثبت سریع اطلاعات از طریق میانبرهای صفحه کلید
+                  و ...
+                </p>
+
+                <div class="d-flex flex-wrap gap-1 ltr">
+                  <span class="badge ltr rounded-pill bg-secondary">C#</span>
+                  <span class="badge rounded-pill bg-secondary">.Net</span>
+                  <span class="badge rounded-pill bg-secondary">Winform</span>
+                  <span class="badge rounded-pill bg-secondary">Fast Report</span>
+                  <span class="badge rounded-pill bg-secondary">SQL</span>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="col px-4">
+            <div class="card">
+              <div class="card-img bg-lgray">
+                <img src="img/portfolio/4.jpg" class="card-img-top keep-aspect">
+              </div>
+
+              <div class="card-body">
+                <h4 class="card-title my-3">نرم افزار لیبل پستی</h4>
+                <p class="card-text text-break text-muted">
+                  امکانات:
+                  تعریف فروشگاه، فرستنده، گیرنده و محصولات
+                  -
+                  جستجو در فروشگاه ها، فرستندگان و گیرندگان
+                  -
+                  تعریف کد کیو آر برای فروشگاه ها و چاپ آن در خروجی
+                  -
+                  بایگانی برگه ها در پایگاه داده
+                  -
+                  گزارش گیری، مشاهده و چاپ مجدد
+                  -
+                  قفل نرم افزاری
+                  -
+                  چاپ گزارش در اندازه های مختلف
+                  -
+                  فیلتر و جستجوی گزارش ها بر حسب تاریخ و ...
+                  -
+                  ورود و ثبت سریع اطلاعات از طریق میانبرهای صفحه کلید
+                  و ...
+                </p>
+
+                <div class="d-flex flex-wrap gap-1 ltr">
+                  <span class="badge ltr rounded-pill bg-secondary">C#</span>
+                  <span class="badge rounded-pill bg-secondary">.Net</span>
+                  <span class="badge rounded-pill bg-secondary">Winform</span>
+                  <span class="badge rounded-pill bg-secondary">Fast Report</span>
+                  <span class="badge rounded-pill bg-secondary">SQL</span>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Contact -->
+  <div id="contact" class="container px-2 py-5 animate__animated animate__fadeIn" >
+
+    <h1 class="py-4 text-center">تماس با من</h1>
+
+    <div class="row g-4 py-4 row-cols-1">
+
+      <div class="col">
+        <!-- Social Links -->
+        <div class="d-flex flex-wrap navbar-expand navbar-light align-items-center justify-content-center">
+          <ul class="nav navbar-nav">
+            <li class="nav-item px-2"><a href="https://instagram.com/sepehrnia.soft" class="nav-link fs-3"><i class="bi bi-instagram"></i></a></li>
+            <li class="nav-item px-2"><a href="https://t.me/asp7798" class="nav-link fs-3"><i class="bi bi-telegram"></i></a></li>
+            <li class="nav-item px-2"><a href="https://github.com/alisepehrnia" class="nav-link fs-3"><i class="bi bi-github"></i></a></li>
+            <li class="nav-item px-2"><a href="https://www.linkedin.com/in/alisepehrnia" class="nav-link fs-3"><i class="bi bi-linkedin"></i></a></li>
+            <li class="nav-item px-2"><a href="mailto:alisepehrnia77@gmail.com" class="nav-link fs-3"><i class="bi bi-envelope-fill"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <footer class="navbar-light navbar-expand p-4 animate__animated animate__fadeIn">
+
+    <div class="container-fluid d-flex align-items-center">
+      <a class="navbar-brand mx-2" href="#">
+        <img src="img/logo-circle.svg" width="50" alt="logo" class="d-inline-block align-text-center">
+      </a>
+
+      <p class="text-muted fs-6 mx-2 my-0">
+        طراحی و برنامه نویسی توسط خودم :)
+      </p>
+    </div>
+    <div id="blog-post-demo" class="demo">
+      <blog-post title="My journey with Vue"></blog-post>
+      <blog-post title="Blogging with Vue"></blog-post>
+      <blog-post title="Why Vue is so fun"></blog-post>
+    </div>
+  </footer> 
+  
+  <!-- End Of Body Content -->
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-TPBVL319L3"></script>
@@ -95,7 +480,19 @@
 
 		gtag('config', 'G-TPBVL319L3');
 	</script>
-	
+
+  <!-- Modernizr -->
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <!-- Vue.js-->
+  <script src="https://unpkg.com/vue@next"></script>
+
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>
