@@ -1,0 +1,57 @@
+{
+  "name": "علی سپهرنیا",
+  "logo": "img/logo-circle.svg",
+  "avatar": "img/avatar.jpg",
+
+  "meta": {
+    "lang": "fa",
+    "dir": "rtl",
+    "title": "علی سپهرنیا | برنامه نویس",
+    "description": "طراح و برنامه نویس نرم‌افزار‌های ویندوز، موبایل و وب",
+    "keywords": "علی, سپهرنیا, برنامه نویس، نرم‌افزار, طراحی سایت, برنامه",
+    "url": "https://sepehrnia.net"
+  },
+
+  "analytics": {
+    "googleAnalyticsId": "G-FE5XGZST50"
+  },
+
+  "nav": [
+    { "label": "درباره من", "href": "#about" },
+    { "label": "مهارت‌ها", "href": "#skills" },
+    { "label": "نمونه کارها", "href": "#portfolio" },
+    { "label": "تماس با من", "href": "#contact" }
+  ],
+
+  "hero": {
+    "heading": "سلام! من یک مهندس کامپیوتر و ==برنامه‌نویس== هستم.",
+    "bio": "من علی سپهرنیا هستم، مهندس کامپیوترم و برنامه‌نویسی میکنم. اگر برای خودتون یا کسب‌و‌کارتون نیاز به **اپلیکیشن** و **وبسایت** دارید یا اگر میخواید یک کار سخت رو آسون‌تر کنید می‌تونید روی من حساب کنید!",
+    "buttons": [
+      {
+        "label": "رزومه",
+        "href": "https://jobvision.ir/cv/41681775-170638",
+        "icon": "bi-arrow-down",
+        "style": "solid",
+        "external": true
+      },
+      { "label": "سفارش کار", "href": "#contact", "icon": "bi-cart-fill", "style": "outline" },
+      { "label": "چیکار بلدی!؟", "href": "#skills", "style": "outline" }
+    ]
+  },
+
+  "socials": [
+    { "label": "Instagram", "icon": "bi-instagram", "href": "https://instagram.com/sepehrnia.soft" },
+    { "label": "Telegram", "icon": "bi-telegram", "href": "https://t.me/alopqrts" },
+    { "label": "GitHub", "icon": "bi-github", "href": "https://github.com/alisepehrnia" },
+    { "label": "LinkedIn", "icon": "bi-linkedin", "href": "https://www.linkedin.com/in/alisepehrnia" },
+    { "label": "Email", "icon": "bi-envelope-fill", "href": "mailto:alisepehrnia77@gmail.com" }
+  ],
+
+  "contact": {
+    "title": "تماس‌با‌من"
+  },
+
+  "footer": {
+    "text": "طراحی و برنامه‌نویسی توسط خودم :)"
+  }
+}

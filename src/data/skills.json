@@ -1,0 +1,36 @@
+{
+  "title": "مهارت‌های من",
+
+  "highlights": [
+    {
+      "icon": "bi-globe2",
+      "title": "طراحی و برنامه‌نویسی سایت",
+      "description": "انجام کلیه مراحل از شروع ساخت یک وبسایت تا پایان آن!"
+    },
+    {
+      "icon": "bi-phone",
+      "title": "طراحی و برنامه‌نویسی اپلیکیشن",
+      "description": "انجام کلیه مراحل از شروع ساخت یک اپلیکیشن موبایل و ویندوز تا پایان آن!"
+    },
+    {
+      "icon": "bi-code-slash",
+      "title": "طراحی و برنامه‌نویسی اختصاصی",
+      "description": "انجام پروژه‌های نرم‌افزاری مختلف بر روی سرور، سخت افزار، توکار و ..."
+    }
+  ],
+
+  "buttons": {
+    "showDetails": "نمایش جزئیات مهارت‌ها",
+    "hideDetails": "پنهان کردن جزئیات مهارت‌ها",
+    "portfolio": "چیکارا کردی!؟"
+  },
+
+  "details": [
+    { "label": "Languages & Frameworks", "items": ["C#", ".NET Core", "ASP.NET Core", "EF Core", "LINQ", "Python"] },
+    { "label": "Platforms", "items": ["Windows Form", "WPF", "Web App", "Web API"] },
+    { "label": "Database", "items": ["Sqlite", "MongoDB", "MSSQL", "PostgreSQL"] },
+    { "label": "Version Control", "items": ["Git", "Github"] },
+    { "label": "IDE & Other Tools", "items": ["Visual Studio", "VS Code", "Navicat", "FastReport", "Inno Script"] },
+    { "label": "Other", "items": ["MVVM", "MVC", "REST API", "Web Scraping"] }
+  ]
+}
